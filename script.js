@@ -2,13 +2,14 @@ $(document).ready(function () {
   const newDay = document.getElementById("newDay");
   
 
-  $("#currentDay").html(moment().format('llll'));
+  $("#currentDay").text(moment().format('llll'));
 
 
   $('.saveBtn').on("click", function() {
     const userInput = newDay.value;
     localStorage.setItem("newDay", "userInput");
     renderLastRegister();
+    ale
    console.log(userInput);
   });
 
