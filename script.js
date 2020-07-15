@@ -1,27 +1,35 @@
 $(document).ready(function () {
-  const newDay = document.getElementById("newDay");
+  
   
 
   $("#currentDay").text(moment().format('llll'));
 
 
-  $('.saveBtn').on("click", function() {
-    const userInput = newDay.value;
-    localStorage.setItem("newDay", "userInput");
+  $('.saveBtn').on("click", function(e) {
+    e.preventDefault()
+    const timeFrame = this.id
+    const userInput = document.getElementById("newDay" + timeFrame).value  
+    var savedDay = JSON.parse(localStorage.getItem("newDay"));
+    if (savedDay){
+      savedDay [`${timeFrame}slot`] = userInput
+      }else{
+        savedDay = {          
+        }
+        savedDay [`${timeFrame}slot`] = userInput
+        console.log(savedDay)
+      }
+      localStorage.setItem("newDay", JSON.stringify(savedDay));
     renderLastRegister();
-    ale
+
    console.log(userInput);
   });
 
   function renderLastRegister () {
-    var newDay = localStorage.getItem("userInput");
-
-    if (!newDay) {
-      return;
-    }
-    newDay.textContent = newDay;
+    var savedDay = localStorage.getItem('newDay');
+    $(".hour").val(savedDay)
+    console.log(savedDay)
   }
-
+  renderLastRegister();
 
 
 
