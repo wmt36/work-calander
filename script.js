@@ -19,7 +19,7 @@ $(document).ready(function () {
         console.log(savedDay)
       }
       localStorage.setItem("newDay", JSON.stringify(savedDay));
-    renderLastRegister();
+    //renderLastRegister();
 
    console.log(userInput);
   });
@@ -30,6 +30,7 @@ $(document).ready(function () {
     console.log(savedDay)
   }
   renderLastRegister();
+  //Date().getHours()
 
 
 
