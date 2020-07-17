@@ -1,2 +1,2 @@
 # work-calander
-im not entirly done with the project i have figured out how to git my userInput to save on the screen from being stored in the local storage after it is refreshed but need to figure out how to single it out the stored data! making slow progress but progress non the less
+Was finally able to connect my relative path to allow my js code to properly link to the html. So no i have succefully connected my javascript allow the current day and time to show up as well as allowing my local storage to connect and show the saved information when the page is refreshed. still working on getting the color to link with the current time, will uodate my repository when it is completed!

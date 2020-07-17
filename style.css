@@ -45,7 +45,7 @@ textarea{
 .hour {
   padding: 1.2rem;
   display: inline;
-  background-color: #ffffff;
+  background-color: #06AED5;
   color: #000000;
   border-top: 1px dashed #000000;
   opacity: .65;
@@ -68,21 +68,27 @@ textarea{
 }
 
 .saveBtn {
-  border-left: solid black;
-  border-radius: 15px;
-  background-color: #06AED5;
-  color: white;
+  padding: 1.2rem;
   display: inline;
-  width: 5rem;
-  height: 2rem;
+  background-color: #06AED5;
+  color: #000000;
+  border-top: 1px dashed #000000;
+  border-radius: 30%;
+  opacity: .65;
 }
 
-.saveBtn i:hover {
+.saveBtn:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+  background-color: white;
 }
 
 .time {
-  color: white;
-  font-weight: bolder;
+  padding: 1.2rem;
+  display: inline;
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+  opacity: .65;
+  width:75%;
 }
